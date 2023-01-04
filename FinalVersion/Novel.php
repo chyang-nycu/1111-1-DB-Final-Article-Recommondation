@@ -11,7 +11,7 @@
     <body>
         <section id="Row1" class="Row1">
             <div id="header" class="header">
-                <h1 id="title" class="title"><a href="Novel.html">Novel Recommend</a></h1>
+                <h1 id="title" class="title"><a href="Novel.html">emo Novel Recommend</a></h1>
                 <a href="wordcloud.html" class="btn">依類型分</a>
                 <a href="survey.html" class="btn">問卷填寫</a>
                 <?php session_start(); ?>
@@ -76,7 +76,7 @@
                     <div class="show" id="show">
                         <?php require_once 'Connect.php'; ?>
                         <?php 
-                            $sql = "SELECT * from TestForComment";
+                            $sql = "SELECT * from TestForComment Order MY Num DESC LIMIT 20";
                             $result = mysqli_query($dbConnection, $sql);
                             if ($result) {
                                 if (mysqli_num_rows($result)>0) {
