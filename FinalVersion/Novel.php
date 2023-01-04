@@ -72,7 +72,7 @@
                     </form>
                 </section>
                 <section class="Row2_2">
-                    <h2 class="userTitle">使用者心得</h2>
+                    <h2 class="userTitle">網站使用者心得</h2>
                     <div class="show" id="show">
                         <?php require_once 'Connect.php'; ?>
                         <?php 
